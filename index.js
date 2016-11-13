@@ -16,6 +16,7 @@ app.get('/', function(request, response) {
 });
 app.post('/',function(sReq, sRes){
   console.log(sRes);
+  response.send("succesful");
 })
 app.get('/getData',function(request, response){
   response.send(object);
