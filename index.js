@@ -19,7 +19,7 @@ app.get('/', function(request, response) {
 });
 app.post('/',function(request, response){
   response.send("succesful");
-  object.push(["pat",request.hostname]);
+  object.push(["pat",request.originalUrl]);
 })
 app.get('/getData',function(request, response){
   response.send(object);
