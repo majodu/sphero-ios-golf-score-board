@@ -18,9 +18,9 @@
     </div>
   </div>
   <md-list layout="column" flex="90" layout-align="center center" ng-controller="buildBoard">
-    <md-list-item class="md-3-line">
-     {{text}}
-    
+    <md-list-item layout="row"ng-repeat="score in scores" class="md-3-line">
+    <div>{{score[0]}}</div>
+    <div>{{score[1]}}</div>
   </md-list>
 </body>
 
