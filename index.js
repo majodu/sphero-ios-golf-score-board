@@ -16,7 +16,7 @@ app.get('/', function(request, response) {
 });
 app.post('/',function(request, response){
   response.send("succesful");
-  object.push(["pat","5"]);
+  object.push(["pat",request.body.score]);
 })
 app.get('/getData',function(request, response){
   response.send(object);
