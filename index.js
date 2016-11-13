@@ -20,7 +20,7 @@ app.get('/', function(request, response) {
 });
 app.post('/',function(request, response){
   response.send("succesful");
-  object.push(["pat",request.body]);
+  object.push(["pat",request.json.body]);
 })
 app.get('/getData',function(request, response){
   response.send(object);
