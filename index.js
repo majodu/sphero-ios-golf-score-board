@@ -14,8 +14,8 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
-app.post('/',function(sReq, sRes){
-  console.log(sRes);
+app.post('/',function(request, response){
+  //console.log(sRes);
   response.send("succesful");
 })
 app.get('/getData',function(request, response){
