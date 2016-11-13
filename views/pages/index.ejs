@@ -3,8 +3,6 @@
 
 <head>
   <% include ../partials/header.ejs %>
-  
-
     <style type="text/css" data-href="/angular-aria.css"></style>
     <link rel="stylesheet" type="text/css" href="/stylesheets/angular-material.css" />
     <script src="/bundle.js"></script>
@@ -12,16 +10,17 @@
 
 <body ng-app="sbApp">
   <% include ../partials/nav.ejs %>
-  <div class="jumbotron text-center">
-    <div class="container">
-      <h1>Leaderboards</h1>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>Leaderboards</h1>
+      </div>
     </div>
-  </div>
-  <md-list layout="column" flex="90" layout-align="center center" ng-controller="buildBoard">
-    <md-list-item layout="row"ng-repeat="score in scores" class="md-3-line">
-    <div>{{score[0]}}</div>
-    <div>{{score[1]}}</div>
-  </md-list>
+    <!--<ca÷nvas id="world"></canvas>-->
+    <md-list layout="column" flex="90" layout-align="center center" ng-controller="buildBoard">
+      <md-list-item layout="row" ng-repeat="score in scores" class="md-3-line">
+        <div>{{score[0]}}</div>
+        <div>{{score[1]}}</div>
+    </md-list>
 </body>
 
 </html>
