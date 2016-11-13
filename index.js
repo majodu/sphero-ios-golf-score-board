@@ -10,7 +10,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/js'));
 app.use(express.static(__dirname + '/css'));
-app.use(bodyParser());
+app.use(bodyParser.json());
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
