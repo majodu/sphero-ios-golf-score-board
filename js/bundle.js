@@ -5,8 +5,16 @@ var angular_mat = require('angular-material');
 
 var sbApp = angular.module('sbApp', ['ngMaterial']);
 
-sbApp.controller('buildBoard', function buildBoard($scope) {
-  $scope.text = "hi"
+sbApp.controller('buildBoard', function buildBoard($scope,$interval) {
+    $scope.text = 5
+    $interval(function () {
+        $.get("/getData", function (data) {
+            $scope.text = data.text;
+        });
+    }, 1000);
+
+
+
 });
 },{"angular":9,"angular-material":7}],2:[function(require,module,exports){
 /**

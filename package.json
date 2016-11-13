@@ -7,7 +7,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "cd js/;browserify  main.js -o bundle.js;cd ..;node index.js"
+    "start": "cd js/;browserify  main.js -o bundle.js;cd ..;node index.js",
+    "start-heroku":""
   },
   "dependencies": {
     "angularjs": "0.0.1",
