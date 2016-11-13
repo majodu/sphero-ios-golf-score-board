@@ -10,6 +10,8 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "angularjs": "0.0.1",
+    "browserify": "^13.1.1",
     "ejs": "2.4.1",
     "express": "4.13.3",
     "pg": "^6.1.0"
