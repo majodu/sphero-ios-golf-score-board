@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "cd js/;browserify  main.js -o bundle.js;cd ..;node index.js"
   },
   "dependencies": {
     "angularjs": "0.0.1",
@@ -25,5 +25,9 @@
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "browserify-css": "^0.9.2"
+  }
 }
